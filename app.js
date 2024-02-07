@@ -21,7 +21,7 @@ function transaction(action) {
       counter++;
       break;
     case "decrease":
-      counter--;
+       counter > 0 ? counter-- : (counter = 0);
       break;
     case "reset":
       counter = 0;
